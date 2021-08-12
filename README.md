@@ -1,2 +1,2 @@
 ## Javascript
-📚 Aprendendo 📚
+📚 Aprendendo os conceitos básicos de Javscript 📚
