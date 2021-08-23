@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class='titulo'>querySelectorAll</h1>
+    <p>É um método que retorna os elementos do documento que correspondem a uma classe ou elemento</p>
+    <h2 class='titulo'>Curso de Javascript</h2>
+    <p class='seila'>Aula sobre querySelectorAll/p>
+    <a href='https://www.google.com.br'>Google</a>
+    <div>
+        <p>Olá mundo</p>
+        <p>Bom dia</p>
+    </div>
+
+
+    <script>
+        //Pegando todos os paragrafos
+        let ps = document.querySelectorAll('p');
+        ps[0].style.color='#00f';
+        ps[1].innerHTML='Novo Texto';
+
+        //Pegando todos os elemento que possuem a classe titulo
+        let ps1 = document.querySelectorAll('.titulo')
+        for(var i=0;i<ps1.length;i++){
+            ps1[i].style.color='#404040';
+            document.write(ps1[i].innerHTML+'<br>')
+        }
+        
+        //Pegando todos os paragrafos que possuem a classe seila
+        let ps2 = document.querySelectorAll('p.seila')
+
+        //Pegando todos os paragrafos que estão dentro da div
+        let ps3 = document.querySelectorAll('div > p')
+
+        //Pegando todos os elementos que estão dentro da div
+        let ps3 = document.querySelectorAll('div > *')
+
+        //Pegando todos os elementos diferentes
+        let ps3 = document.querySelectorAll('p,h1,h2')
+
+    </script>
+</body>
+</html>
