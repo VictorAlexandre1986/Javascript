@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id='subtitulo'>Ola mundo!!!</h1>
+    <input type='text' id='caixa' value='Victor'> 
+    <br>
+    
+
+    <script>
+        //Pegando o conteudo do input
+        let id = document.getElementById('caixa').value;
+        //Escrevendo o conteudo do input na pagina
+        document.write(id)
+
+        //Mudando o conteudo do input
+        document.getElementById('caixa').value='Victor Alexandre';
+
+        //Pegando o conteudo do h1
+        let texto = document.getElementById('subtitulo').innerHTML;
+        document.write('<br>',texto);
+
+        //Mudando o conteudo do h1
+        document.getElementById('subtitulo').innerHTML='Mudando o texto';
+
+    </script>
+</body>
+</html>
