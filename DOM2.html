@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>O</p>
+    <p>L</p>
+    <p>A</p>
+
+    <p>M</p>
+    <p>U</p>
+    <p>N</p>
+    <p>D</p>
+    <p>O</p>
+
+    <script>
+
+        /*Pega todos os elementos 'p' e retorna todos em um array*/
+        let letras = document.getElementsByTagName('p');
+
+        //Pegando o valor do indice 4 e escrevendo
+        document.write(letras[4].innerHTML);
+
+
+
+        //Mudando todos os elementos
+        for (let i=0;i<letras.length;i++){
+            letras[i].style.color='#034512';
+        }
+
+        //Mudando apenas um elemento
+        letras[6].style.color='#f00';
+    </script>
+</body>
+</html>
